@@ -1,6 +1,6 @@
 <div align="center">
 
-![GitHub repo size](https://img.shields.io/github/repo-size/Pranav-Jadhav09/responsive-shop-landing-page)
+![GitHub repo size](https://img.shields.io/github/repo-size/Pranav-Jadhav09/responsive-coffee-shop-landing-page)
 [![Twitter Follow](https://img.shields.io/twitter/follow/Pranav_Jadhav09?style=social)](https://twitter.com/Pranav_Jadhav09)
 [![Hashnode Badge](https://img.shields.io/badge/Read_What_I_learn-2962FF?style=social&logo=hashnode&logoColor=blue)](https://thejrpranav09.hashnode.dev/master-javascript-scroll-reveal-library-boost-the-user-experience)
 
@@ -12,7 +12,7 @@
 <h2 align="center">Smooth Brew - Landing Page</h2>
 Smooth Brew Coffee Shop is a fully responsive landing page website, responsive for all devices, built using HTML5, CSS3, and JavaScript. Also used GSAP Library to create parallex effects.
 
-<a href="https://pranav-jadhav09.github.io/responsive-coffe-landing-page/"><strong>➥ Live Demo</strong></a>
+<a href="https://pranav-jadhav09.github.io/responsive-coffee-shop-landing-page/"><strong>➥ Live Demo</strong></a>
 
 </div>
 
