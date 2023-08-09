@@ -10,7 +10,7 @@
 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQz4rCK8c8nA94jBmC9EGhIQ-wP-8SA4Oi3EQ&usqp=CAU" style="width: 155">
 
 <h2 align="center">Smooth Brew - Landing Page</h2>
-Smooth Brew Coffee Shop is a fully responsive landing page website, responsive for all devices, built using HTML5, CSS3, and JavaScript. Also used GSAP Library to create parallex effects.
+Smooth Brew Coffee Shop is a fully responsive landing page website, responsive for all devices, built using HTML5, CSS3, and JavaScript. Also used GSAP Library to create parallax effects.
 
 <a href="https://pranav-jadhav09.github.io/responsive-coffee-shop-landing-page/"><strong>➥ Live Demo</strong></a>
 
@@ -21,7 +21,7 @@ Smooth Brew Coffee Shop is a fully responsive landing page website, responsive f
 ### ☕️ Smooth Berw Coffee Shop
 
 - Made using HTML CSS, JavaScript and GSAP Library.
-- Contains GSAP - Parallex animation.
+- Contains GSAP - Parallax animation.
 - Developed first with the Mobile First methodology, then for desktop.
 - Compatible with all mobile devices and with a beautiful and pleasant user interface.
 
