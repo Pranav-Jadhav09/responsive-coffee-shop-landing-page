@@ -1,0 +1,250 @@
+/* --- Goggle Fonts --- */
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap");
+
+/* --- Variable CSS --- */
+:root {
+  --header-height: 3rem;
+
+  /* colors */
+  --first-color: #fca4a6;
+  --first-color-dark: #c1576a;
+  --first-color-darken: #a83e51;
+  --white-color: #fcf8f8;
+
+  /* fonts & typography */
+  --body-font: "Comic Neue", sans-serif;
+  --big-font-size: 2.5rem;
+  --normal-font-size: 0.938rem;
+
+  /* z-index */
+  --z-fixed: 100;
+}
+
+/* --- Media Query font & typography --- */
+@media screen and (min-width: 768px) {
+  :root {
+    --big-font-size: 5rem;
+    --normal-font-size: 1rem;
+  }
+}
+
+/* --- Reset --- */
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* --- Base --- */
+body {
+  margin-top: var(--header-height);
+  font-family: var(--body-font);
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* --- Common Class --- */
+.bd-grid {
+  max-width: 1024px;
+  display: grid;
+  grid-template-columns: 100%;
+  column-gap: 2rem;
+  width: calc(100% - 2rem);
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+/* --- ** Layout ** --- */
+
+/* -- Header section -- */
+.header-sec {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: var(--z-fixed);
+  background-color: var(--first-color);
+}
+
+/* navbar */
+.nav {
+  height: var(--header-height);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* -- Mobile Screen nav list : first -- */
+@media screen and (max-width: 768px) {
+  .nav-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    height: 100%;
+    padding: 3.5rem 1.5rem 0;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    transition: 0.3s;
+  }
+}
+.nav-close {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.nav-item {
+  margin-bottom: 2rem;
+}
+.nav-logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.nav-close,
+.nav-link,
+.nav-logo,
+.nav-toggle {
+  color: var(--white-color);
+}
+.active,
+.nav-link:hover {
+  color: var(--first-color-dark);
+}
+.nav-toggle {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* -- Show Menu -- */
+.show {
+  right: 0;
+}
+
+/* --- Main : Home Section --- */
+.home {
+  background-color: var(--first-color);
+  overflow: hidden;
+}
+.home-container {
+  height: calc(100vh - var(--header-height));
+  grid-template-rows: repeat(2, max-content);
+  row-gap: 1.5rem;
+  padding-top: 2rem;
+}
+
+/* images */
+.home-img {
+  position: relative;
+  padding-top: 1.5rem;
+  justify-self: center;
+  width: 300px;
+  height: 233px;
+}
+.home-img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* content text */
+.home-data {
+  color: var(--white-color);
+}
+.home-title {
+  font-size: var(--big-font-size);
+  margin-bottom: 1rem;
+  line-height: 1.1;
+}
+.home-description {
+  font-size: 1.1rem;
+  margin-bottom: 2.5rem;
+}
+.home-description span {
+  color: var(--first-color-darken);
+}
+.home-button {
+  display: inline-block;
+  background-color: var(--first-color-dark);
+  color: var(--white-color);
+  padding: 1.16rem 2rem;
+  border-radius: 0.5rem;
+}
+.home-button:hover {
+  background-color: var(--first-color-darken);
+}
+
+/* --- Media Queries --- */
+@media screen and (min-width: 768px) {
+  body {
+    margin: 0;
+  }
+
+  /* - Nav - */
+  .nav {
+    height: calc(var(--header-height) + 1.5rem);
+  }
+  .nav-toggle,
+  .nav-close {
+    display: none;
+  }
+  .nav-list {
+    display: flex;
+  }
+  .nav-item {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-left: 3rem;
+    margin-bottom: 0;
+  }
+
+  /* - Home - */
+  .home-container {
+    height: 100vh;
+    grid-template-columns: repeat(2, max-content);
+    grid-template-rows: 1fr;
+    row-gap: 0;
+    align-items: center;
+    justify-content: center;
+  }
+  .home-description {
+    font-size: 1.4rem;
+  }
+  .home-img {
+    order: 1;
+    width: 375px;
+    height: 290px;
+  }
+  .home-img img {
+    width: 375px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .bd-grid {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .home-container {
+    justify-content: initial;
+    column-gap: 4.5rem;
+  }
+  .home-img {
+    width: 604px;
+    height: 466px;
+  }
+  .home-img img {
+    width: 604px;
+  }
+}
